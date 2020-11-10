@@ -16,8 +16,7 @@
         // },
         {
             "env":{"PORT":"3000"},
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
+            "internalConsoleOptions": "openOnSessionStart",
             "name": "server.js nodemon",
             "program": "${workspaceFolder}/server.js",
             "request": "launch",

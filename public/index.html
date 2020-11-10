@@ -21,11 +21,15 @@
             console.log('desconectado del server');
         });
 
-        client.on('message', function (payload) {
+        client.on('new-message', function (payload) {
             console.log(payload);
         });
 
-        client.emit('message', { name: 'Christopher' });
+        client.on('active-bands', function (payload) {
+            console.log(payload);
+        });
+
+        // client.emit('message', { name: 'Christopher' });
     </script>
 </body>
 
